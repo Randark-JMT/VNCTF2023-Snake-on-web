@@ -1,0 +1,10 @@
+version: '3.4'
+services:
+  snake:
+    # build: ../
+    image: snake-on-web:latest
+    environment:
+      FLAG: "flag{8e6ae178-7387-4db2-a788-039a27bd4185}"
+    ports:
+      - "8080:8080"
+    restart: "always"
